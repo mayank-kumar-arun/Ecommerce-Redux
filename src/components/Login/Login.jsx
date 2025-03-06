@@ -24,61 +24,8 @@ const Login = () => {
     const { name, value } = e.target;
     setValues({ ...values, [name]: value });
   };
-  console.log("vlaues", values);
+
   return (
-    // <div className="grid grid-cols-1 items-center justify-items-center h-screen bg-black">
-    //   {" "}
-    //   <Card className="w-96">
-    //     <CardHeader
-    //       variant="gradient"
-    //       color="gray"
-    //       className="mb-4 grid h-28 place-items-center"
-    //     >
-    //       <Typography variant="h3" color="white">
-    //         Sign In
-    //       </Typography>
-    //     </CardHeader>
-    //     <CardBody className="flex flex-col gap-4">
-    //       <Input
-    //         label="Name"
-    //         size="lg"
-    //         type="text"
-    //         name="name"
-    //         onChange={onChange}
-    //         value={values.name}
-    //       />
-    //       <Input
-    //         label="Password"
-    //         size="lg"
-    //         type="password"
-    //         name="password"
-    //         onChange={onChange}
-    //         value={values.password}
-    //       />
-    //       <Input
-    //         label="Image Url Link"
-    //         size="lg"
-    //         type="text"
-    //         name="image"
-    //         onChange={onChange}
-    //         value={values.image}
-    //       />
-    //       <div className="-ml-2.5"></div>
-    //     </CardBody>
-    //     <CardFooter className="pt-0">
-    //       <Button
-    //         variant="gradient"
-    //         fullWidth
-    //         onClick={() => dispatch(login(values))}
-    //       >
-    //         Sign In
-    //       </Button>
-    //       <Typography variant="small" className="mt-6 flex justify-center">
-    //         Image Is Optional
-    //       </Typography>
-    //     </CardFooter>
-    //   </Card>
-    // </div>
     <div className="grid grid-cols-1 items-center justify-items-center min-h-screen bg-black p-4">
       <Card className="max-w-sm w-full">
         <CardHeader
@@ -138,9 +85,9 @@ const Login = () => {
             variant="small"
             className="mt-2 text-center text-xs md:text-sm"
           >
-            For Enter, you can try with Name:{" "}
+            For Enter you can try with Name:{" "}
             <span className=" font-semibold">John</span>, Password:{" "}
-            <span className=" font-semibold">John123#</span>.
+            <span className=" font-semibold">John123#</span>
           </Typography>
         </CardFooter>
       </Card>
